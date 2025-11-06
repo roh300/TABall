@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fancy Tables — Multiplication Tables 2–100</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+    <nav class="topnav card">
+      <div class="nav-left">
+        <a class="brand" href="index.html">Fancy Tables</a>
+        <a href="index.html">Tables</a>
+        <a href="squares.html">Squares</a>
+        <a href="cubes.html">Cubes</a>
+        <a href="roots.html">Roots</a>
+      </div>
+      <form id="nav-search-form" class="nav-search" role="search">
+        <input id="nav-search" placeholder="Search: e.g. 'squares 5' or 'cubes'" aria-label="Search" />
+        <button type="submit" class="btn outline">Go</button>
+      </form>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-inner">
+        <h1>Fancy Tables</h1>
+        <p class="subtitle">Generate beautiful multiplication tables (2 — 100) and print them to PDF.</p>
+      </div>
+      <div class="card input-card">
+        <label for="num">Enter a number (2–100)</label>
+        <div class="controls">
+          <input id="num" type="number" min="2" max="100" value="2" />
+          <button id="generate" class="btn primary">Generate</button>
+          <button id="print" class="btn outline">Print / Save PDF</button>
+        </div>
+        <div class="quick-list">
+          Quick: <div class="chips" id="chips"></div>
+        </div>
+      </div>
+    </header>
+
+    <section id="result" class="result" aria-live="polite">
+      <!-- Generated table will appear here -->
+    </section>
+
+    <footer class="footer">
+      <small>Designed for learning & fun • Printable-friendly</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
